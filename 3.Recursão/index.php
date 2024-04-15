@@ -6,14 +6,14 @@
         for ($i = 0; $i < $total_de_caixas; $i ++) {
             $chave = $caixa[$i];
             if ($chave !== 10) {
-                continue;
+                continue; // Se a chave não for 10, continua para a proxima iteração
             }
             else {
                 print "Achei a chave";
-                return;
+                return; // Retorna apos encontrar a chave
             }
-
         }
+        // Se chegar aqui, significa que a chave nao foi encontrada
         print "Chave não encontrada!";
     }
 
